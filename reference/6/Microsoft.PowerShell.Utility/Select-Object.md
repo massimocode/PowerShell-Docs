@@ -103,7 +103,7 @@ The **Select-Object** optimization is available only for commands that return ob
 ```
 PS C:\> Get-Process | Select-Object -Property ProcessName,@{Name="Start Day"; Expression = {$_.StartTime.DayOfWeek}}
 
-ProcessName  StartDay
+ProcessName  Start Day
 ----         --------
 alg          Wednesday
 ati2evxx     Wednesday
